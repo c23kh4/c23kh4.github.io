@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #wrapper {
+}
+        #sunglasses {
+    	border-radius: 50%;
+        width: 300px;
+        height: 300px;
+        background-color: #FA180C; 
+        color:#0C47FA;
+        float:left;
+
+    }
+
+        #sheev {
+    	border-radius: 50%;
+        width: 300px;
+        height: 300px;
+        background-color: #B90CFA; 
+        color:#0C47FA;
+        float:left;
+
+    }
+
+   	#box {
+   		width:600px;
+   		height:45px;
+   		border-radius:10%;
+   		border:solid;
+   		font-size:30px;
+   		text-align:center;
+   		float:left;
+      border-color:#B90CFA
+
+   		   	}
+
+    #sunglasses:hover {
+        
+        background-image: url("https://external-preview.redd.it/WG24otPnSCG1tUeLCHTfLdsAGdWsu4R_92YenxH6jsw.jpg?auto=webp&s=173c1387be8f961f0e6286ed6324f7549cc25e7f");
+        background-size: 300px 300px;
+        border-image-repeat: no-repeat;
+        transform: rotate(1440deg);
+        transition: 2s;
+    }
+    #sunglasses:active {
+	
+    }
+    #sheev:hover {
+
+    	background-image: url("https://scontent.fnyc1-1.fna.fbcdn.net/v/t1.0-1/29027729_1400527250051134_5394939232448460764_n.jpg?_nc_cat=107&_nc_oc=AQkgHVft_gb6eFLLtPzSP6mrwlCzGDFW-KkcWdAWSN_RGmdZgU9Mqk_T8v7jVQXBjBs&_nc_ht=scontent.fnyc1-1.fna&oh=f5c5cd7159b232a389bfd83868456e19&oe=5E34CAD1");
+    	background-size: 300px 300px;
+   		transition: ease-in-out 1s;
+    }
+      #sheev:active {
+		transform: rotate(-1440deg);
+        transition: 1s;
+    }
+    #starbox {
+    	width:200px;
+   		height:120px;
+   		border-radius:15%;
+   		border:solid;
+   		font-size:20px;
+   		text-align:center;
+   		float:left;
+   		border-color:#B90CFA 
+    }
+    </style>
+</head>
+
+<body>
+      <div id="sunglasses"></div>
+    <div id="sheev"></div>
+    <div id="latinwords"></div>
+    <div id="starbox"></div>
+    <div id="box"></div>
+    <script type="text/javascript">
+    var latinwords = document.getElementById('box');
+
+    sunglasses.addEventListener("click", function() {
+        latinwords.innerText = words[Math.round(Math.random() * 9)];
+
+});
+    var starwords = document.getElementById('starbox');
+
+	sheev.addEventListener("click", function() {
+        starwords.innerText = superwords[Math.round(Math.random() * 2)];
+
+
+
+
+    });
+
+    var words = ["Carthago delenda est", "alea iacta est", "et tu, Brute?", "lorem ipsum dolor sit", "audentes fortuna iuvat", "ARMA virumque cano, Troiae qui primus ab oris", "Cave canem", "Gallia est omnis divisa in partes tres", "ad Romam veni sed hanc togam solam tuli!", "Veni vidi dormivi"];
+    var superwords = ["I don't like sand. It's coarse and rough and irritating and it gets everywhere.", "Han shot first", "Episode II was the best"]
+    </script>
+  
+      <body bgcolor="#B90CFA">
+</body>
+
+</html>
