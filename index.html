@@ -2,12 +2,12 @@
 <html>
 
 <head>
-    <style type="text/css">
+    <style>
+           a { color: #852B93; }
     	section{
     		background-color:#B955E1;
     		width:100%;
     		height:800px;
-    		border:dotted;
     	}
     	#one{
     		background-color:#852B93;
@@ -19,7 +19,6 @@
 
 
     	}
-    
 
     	#what{
     		background-color:#D692F0;
@@ -46,12 +45,33 @@
     		position:fixed;
     		z-index: 5;
     	}
+        .sketch {
+            background-color:#852B93;
+            position:absolute;
+            left:250px;
+            top:60px;
+            color:#852B93;
+        }
+        #spins:hover {
+            background-color:red;
+            color: white;
+            font-size:50px;
+           background-image: url("https://external-preview.redd.it/WG24otPnSCG1tUeLCHTfLdsAGdWsu4R_92YenxH6jsw.jpg?auto=webp&s=173c1387be8f961f0e6286ed6324f7549cc25e7f");
+           background-size: 200px 200px;
+        border-image-repeat: no-repeat;
+
+        }
+        #spins {
+            height:200px;
+            width:400px;
+        }
+
 
 	</style>
     <title></title>
 </head>
 
-<body> 
+<body id="body"> 
 	    <div class=idk id=head>
 
     		
@@ -60,12 +80,16 @@
     	 	<a href="https://c23kh4.github.io"><img src=
     	 		"logologo.png" alt="logo" width="82" height="86" title="logo" alt="llogo"></a>
     	 		<h1> Katherine Yang </h1>
-    		<p> <a href="spins.html">first codesketch</a> </p>
+    		<p> <a href="journal.html">coding journal</a> </p>
 
     </div>
     <div id=what> 
     	<h1>ABOUT ME</h1>
     	<p> I'll write this eventually...</p>
+    </div>
+    <div class=sketch id="spins">
+         <a href="https://c23kh4.github.io">First Codesketch!<a/>
+
     </div>
 <section id="one"></section>
 <section id="two"></section>
@@ -73,12 +97,10 @@
 
 
     <script type="text/javascript">
+        var x = document.getElementById("spins")
+        what.innerText = "ASJFASLFD"
 
-<!what.addEventListener("click", function() {
-        what.innerText = description;
-         });
-var description = ["Will write this eventually... until then, this is a paragraph"]
-var description = middle !>
+what.addEventListener
 
 
 
