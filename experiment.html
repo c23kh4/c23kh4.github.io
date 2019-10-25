@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style type="text/css">
+
+    	  #road {
+	background-image: url("road.jpg");
+		background-repeat:no-repeat;
+       background-size:cover;
+       height:200px;
+       width:500px;
+       border:solid;
+       float:left;
+       top:1px;
+    }
+
+    #outfit {
+        width: 200px;
+        height: 200px;
+        border: solid black 2px;
+        position:absolute;
+        border-radius:50%;
+        left:160px;
+        top:3%;
+        text-align:center;
+
+        
+    }
+    .circle {
+        width: 50px;
+        height: 50px;
+        color:black;
+        border-radius:50%;
+        text-align:center;
+    }
+    #one {
+        background-color: red;
+    }
+    #two {
+        background-color: yellow;
+    }
+    #three {
+        background-color: green;
+        color:black;
+    }
+    #holder {
+    	border:solid;
+    	border-radius:10%;
+    	height:160px;
+    	width:50px;
+    }
+  
+
+    </style>
+</head>
+
+<body>
+	<div id="holder">
+    <div class="circle" id="one">one</div>
+    <div class="circle" id="two">two</div>
+    <div class="circle" id="three">three</div>
+</div>
+    <div id="outfit">
+    	
+    </div>
+    <div id="road"></div>
+
+    <script type="text/javascript">
+    	
+var blue = document.getElementById('one');
+var red = document.getElementById('two');
+var yellow = document.getElementById('three');
+var thing=document.getElementById("outfit");
+blue.addEventListener("click", function(
+){
+	thing.innerText = "Stop!";
+	thing.style.backgroundColor="red";
+})
+red.addEventListener("click", function(
+){
+	thing.innerText = "Wait!";
+	thing.style.backgroundColor="yellow";
+})
+yellow.addEventListener("click", function(event
+){
+	console.log(event);
+	thing.innerText="Go!";
+	thing.style.backgroundColor="green";
+})
+
+
+    </script>
+
+</body>
+
+</html>
