@@ -8,6 +8,13 @@
 		width:300px;
 		background-repeat: no-repeat;
 	}
+	#fizzbuzz {
+		background-image:url("fizzbuzz.png");
+		background-size:contain;
+		height:600px;
+		width:400px;
+		background-repeat: no-repeat;
+	}
 </style>
 <head>
 	<title></title>
@@ -44,4 +51,11 @@ It's October and Halloween is where it's at. I've started brainstorming my story
 <p>Twine is an interesting tool to use because of the way it allows you to visualise your project in linear (or not-so-linear) form... There is a downside in that it takes some time to figure out how CSS and java are used in twine. I'm not satisfied yet with the style of my story because it's taking some time to figure out how to manipulate the program.</p>
 <p>Now that I've laid out the storyline, I plan to learn more about CSS and java in twine and incorporate it into my story. I also plan to develop the plot and add images (I haven't decided whether to draw those or use images from the web). </p>
 </body>
+<p>Today in class we worked on writing a program that would count from 1 to 100 but and replace some of the numbers with the words "fizz," "buzz," and "fizzbuzz." OUr logic looked like this:
+<li>Define variable "counter"</li> 
+<li>if counter is divisible by neither three or five, say counter. If divisible by three but not five say fizz. If divisible by five but not three, say buzz. If divisible by both, say fizzbuzz.</li> 
+<li>Add 1 to variable counter and repeat. </li> 
+
+We encountered some trouble with how to find the remainder once counter was divided by three or five. On scratch, eventually we found mod, a helpful tool which allowed us to reference the event where there was no remainder after the division. We then stuck all of our code inside a loop which repeats until 100 is reached. </p>
+<div id="fizzbuzz"></div>
 </html>
