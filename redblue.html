@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<style>
+		#text {
+			font-size: 50px;
+		}
+		#line {
+			height:1000px;
+			width:10px;
+			background-color:black;
+			position:absolute;
+			left:495px;
+			top:0px;
+		}
+		#box {
+			height:300px;
+			width:300px;
+			font-size:20px;
+			position:relative;
+			left:700px;
+			top:50px;
+		}
+	</style>
+	<div id="line"></div>
+	<div id="box"></div>
+	<div id="text">cross the line :( </div>
+<script type="text/javascript">
+var kt;
+
+document.addEventListener("mousemove", function mouse(event) {
+
+	console.log(event.clientX);
+	kt = event.clientX;
+
+	if (kt > 500) {
+	document.body.style.backgroundColor = "blue"
+	text.innerText = ":)";;
+box.innerText = "aasdfhlasdkhfksa";
+}
+if (kt < 501) {
+document.body.style.backgroundColor = "red";
+box.innerText = "ahhh!";
+text.innerText = "cross the line :(";
+
+}
+
+
+}) 
+
+
+	
+
+</script>
+
+
+</body>
+</html>
