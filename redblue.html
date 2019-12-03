@@ -4,6 +4,7 @@
 	<title></title>
 </head>
 <body>
+	<button onclick="buttonFunction()">Click me</button>
 	<style>
 		#text {
 			font-size: 50px;
@@ -24,10 +25,21 @@
 			left:700px;
 			top:50px;
 		}
+				#otherbox {
+					background-color:marvel;
+			height:300px;
+			width:300px;
+			font-size:40px;
+			position:relative;
+			left:1%;
+			top:10%;
+			color:green;
+		}
 	</style>
 	<div id="line"></div>
 	<div id="box"></div>
 	<div id="text">cross the line :( </div>
+	<div id="otherbox"></div>
 <script type="text/javascript">
 var kt;
 
@@ -51,8 +63,21 @@ text.innerText = "cross the line :(";
 
 }) 
 
+function buttonFunction() {
+	document.getElementById("otherbox").innerHTML = "FUNCTION FUNCTION FUNCTION";
+}
+var randR = Math.floor(Math.random() * 255) + 1;
+var randG = Math.floor(Math.random() * 255) + 1;
+var randB = Math.floor(Math.random() * 255) + 1;
 
-	
+
+
+if (kt > 500) {
+document.getElementById('otherbox').style.backgroundColor = "red"; }
+if (kt < 501) {
+document.getElementById('otherbox').style.backgroundColor = "blue"; }
+
+
 
 </script>
 
