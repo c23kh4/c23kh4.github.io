@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+  Flavor:
+    <style>
+      body {
+        text-align:right;
+      }
+        #box {
+      
+   		width:300px;
+   		height:300px;
+   		font-size:30px;
+   		border-radius:50%;
+   		text-align:center;
+      position: absolute;
+      left:30%;
+   		   	}
+
+   		  #boxtwo {
+   		font-size:30px;
+   		text-align:center;
+	width: 0px;
+	height: 0px;
+	border-left: 150px solid transparent;
+	border-right: 150px solid transparent;
+	border-top: 300px solid #DDB228;
+	position: absolute;
+      left:30%;
+      top:50%;
+   		   	}
+   		   	#three {
+   		width:300px;
+   		height:300px;
+   		font-size:30px;
+   		text-align:center;
+      float:right;
+      background-color:lightblue;
+   		   	}
+
+	</style>
+    <div id="box"></div>
+       <div id="boxtwo"></div>
+       <div id="three"></div>
+   <body onload="myFunction()">
+    <script type="text/javascript">
+
+function myFunction() {
+                three.innerText = words[Math.round(Math.random() * 10)];
+    document.getElementById('box').style.backgroundColor = "rgb(" + randR + ", " + randG + ", " + randB + ")";
+  
+    }
+
+      
+      var words = ["grasshopper", "blood", "bat wing", "dirt", "chocolate", "electrical fire", "moss", "water", "woodchip", "?", "cleaning fluid"];
+    
+
+   var randR = Math.floor(Math.random() * 255) + 1;
+var randG = Math.floor(Math.random() * 255) + 1;
+var randB = Math.floor(Math.random() * 255) + 1;
+
+
+
+
+    </script>
+</body>
+
+</html>
