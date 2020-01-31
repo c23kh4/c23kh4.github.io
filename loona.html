@@ -1,0 +1,83 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<h1>LOONA HASH 2.05 6PM KST</h1>
+<style type="text/css">
+	
+	.things{
+		width:100px;
+		height:100px;
+		background-color:black;
+		position:relative;
+		background-position:center;
+	
+		background-size:contain;
+		background-repeat: no-repeat;
+		border-radius:50%;
+		transition:.25s;
+	}
+	#button{
+	width:100px;
+	height:50px;
+	background-color:white;
+	background-position:center;
+	font-size:20px;
+}
+
+</style> </head>
+ <body>
+
+
+		<div id="button">CLICK</div>
+
+
+ 	<script type="text/javascript">
+
+ 		var loonaArray = [
+ 		"url(https://pbs.twimg.com/media/DiVrnCVW0AAGXL2.jpg)", "url(https://i.pinimg.com/236x/a1/d9/f4/a1d9f418d8e94cad38cb156ee4f922ac.jpg)", "url(http://pm1.narvii.com/6794/4b1a86a257943d6bd9b5c837477ba9cd4ac3425fv2_00.jpg)", "url(https://d.wattpad.com/story_parts/646392265/images/1560b480da6139aa359880017259.jpg)", "url(https://pbs.twimg.com/media/DTtQm-hVQAAW2bz.jpg)", "url(https://pm1.narvii.com/6794/6b6a56c1516948bdb1926d56c6f85949323e9d4fv2_hq.jpg)", "url(https://pbs.twimg.com/media/DTy2xgnWAAAGr6y.jpg)", "url(https://pbs.twimg.com/media/DU5t0AlX0AMTdWs.jpg)", "url(https://i.pinimg.com/236x/51/b4/b6/51b4b6f0d920dbeadca7b1a272c1aa69.jpg)", "url(https://i.pinimg.com/474x/9b/ca/a6/9bcaa6b78dc4e4e0bfb0085ddb8b8574.jpg)", "url(https://66.media.tumblr.com/30553ca787d46d813dde55d938887ef7/tumblr_pb5fa6JkRs1xqcwupo6_250.png)", "url(https://66.media.tumblr.com/74f83c52697387da3f66020d4e11da18/tumblr_pgpxag8NSx1u8ei3g_540.jpg)"]
+ 		
+ 		function makeLoona () {
+
+ 			var jinsoul = document.createElement("div");
+ 			document.body.appendChild(jinsoul);
+ 			jinsoul.classList.add("things");
+ 			jinsoul.style.backgroundImage =loonaArray[Math.floor(Math.random()*12)];
+
+ 		
+ 				function move () {
+ 					jinsoul.style.left = Math.round(Math.random()*1000)+"px";
+ 				jinsoul.style.top = Math.round(Math.random()*500)+"px";
+ 					jinsoul.style.transform = ' rotate(' + Math.round(Math.random()*360)  + 'deg)';
+ 					var size = Math.round(Math.random()*300)+"px";
+ 					jinsoul.style.height = Math.round(Math.random()*300)+"px";
+ 					jinsoul.style.width = Math.round(Math.random()*300)+"px";
+ 				
+ 				}
+
+ 					 		setInterval(move, 1000)
+
+	
+ 		};
+
+ 		
+ 		var i;
+
+ 		for(var i=0; i<500; i++){
+ 			makeLoona();
+ 		};
+
+
+var button = document.getElementById("button");
+
+	button.addEventListener("click", function() {
+        button.innerText = "STAN LOONA HAHAHAHAHA";
+        button.style.height = 90000 + "px";
+        button.style.width = 1000 + "px";
+
+         });
+ 		
+
+ 	</script>
+ 
+ </body>
+ </html>
