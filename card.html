@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+	<style>
+			.things{
+		width:100px;
+		height:100px;
+		position:relative;
+		background-position:center;
+	
+		background-size:contain;
+		background-repeat: no-repeat;
+		border-radius:50%;
+		transition:.25s;
+	}
+
+		#head {
+			font-size:40px;
+			text-align:center;
+			color:blue;
+			margin:50px;
+		}
+		#head:hover {
+			font-size:50px;
+		}
+		#rightcorner {
+			position:absolute;
+			left:90%;
+			top:3%;
+			height:100px;
+			width:100px;
+
+		}
+		#circleone {
+			position:absolute;
+			background-color:#ff1a1a;
+			text-align:center;
+
+		}
+		body {
+			background-color: #ff1a1a;
+			color: #ff1a1a;
+			font-family: 'Josefin Sans', sans-serif;
+		}
+	</style>
+	<title></title>
+</head>
+<body>
+	<div id="head">Today is Valentine's Day.</div>
+	<div id="rightcorner"></div>
+	<div id="circleone"><h1>Dear Ex-Wife,</h1>
+		<p>I wrote you a poem for Valentine's day.</p>
+		<i>
+			<p>Roses are red</p>
+			<p>Violets are blue</p>
+			<p>Even when we were non-married</p>
+			<p>I never liked you</p>
+			<p>Thank god we're divorced :)</p></i>
+			<p> ———</p>
+			<p>This holiday is a devious plot conceived by Hallmark to sell more Things. Love is an illusion. The only real things in life are capitalism and The Void.</p></div>    	 	<a href="https://c23kh4.github.io"></div>
+
+<script type="text/javascript">
+
+  head.addEventListener("click", function() {
+        head.innerText = "Good job. Now click on the top right corner of the page.";
+
+    });
+
+    rightcorner.addEventListener("click", function() {
+        rightcorner.innerText = "Took you long enough. Type something.";
+        rightcorner.style.color = "black";
+
+
+    });
+    var e;
+    var kt;
+  document.onkeypress = function (e) {
+  	var kt;
+var circleone = document.getElementById("circleone"); 
+e = e || window.event;
+ console.log("hi");
+ console.log(event.clientX);
+	kt = event.clientX;
+
+    circleone.style.height = 100 + "%";
+    circleone.style.width = 100 + "%";
+    circleone.style.color = "blue";
+	
+
+};
+var imageArray = [ "url(duck.png)", "url(duck.png)"
+]
+
+function makeSomething() {
+	var jinsoul = document.createElement("div");
+ 			document.body.appendChild(jinsoul);
+ 			jinsoul.classList.add("things");
+ 			jinsoul.style.backgroundImage =imageArray[Math.floor(Math.random()*2)];
+
+ 		
+ 				function move () {
+ 					jinsoul.style.left = Math.round(Math.random()*1000)+"px";
+ 				jinsoul.style.top = Math.round(Math.random()*500)+"px";
+ 					jinsoul.style.transform = ' rotate(' + Math.round(Math.random()*360)  + 'deg)';
+ 					var size = Math.round(Math.random()*300)+"px";
+ 			
+ 				
+ 				}
+
+ 					 		setInterval(move, 1000)
+
+	
+ 		};
+
+ 		
+ 		var i;
+
+ 		for(var i=0; i<100; i++){
+ 			makeSomething();
+ 		};
+
+
+
+</script>
+</body>
+</html>
