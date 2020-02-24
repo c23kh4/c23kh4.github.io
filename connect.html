@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="" rel="stylesheet">
+    <title></title>
+    <style type="text/css">
+    body {
+        margin: 0;
+        background-image: url(restaurant4.png);
+        background-size: cover;
+        background-repeat: repeat;
+        z-index: -10;
+        position: inherit;
+    }
+
+    .containerText {
+        position: relative;
+        width: 80%;
+        padding: 5%;
+        /*        height: 600px;
+*/
+        top: 100%;
+        text-align: left;
+        font-size: 18px;
+        font-family: '', monospace;
+        color: white;
+        opacity: 1;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .container {
+
+        margin: 2px;
+        opacity: 0.8;
+        width: 700px;
+        height: 700px;
+        position: absolute;
+        display: inline-block;
+        border-radius: 50%;
+        z-index: -1;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #know {
+        left: 0%;
+
+    }
+
+    #feel {
+        left: 50%;
+
+    }
+
+    #plate {
+        width: 700px;
+        height: 300px;
+        /*        background-color: red;
+*/
+        position: absolute;
+        top: 47%;
+        left: 25%;
+        background-image: url("https://library.kissclipart.com/20180904/ape/kissclipart-softball-ball-clipart-softball-tee-ball-baseball-a51afae7b7627559.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 1;
+
+    }
+
+
+
+    #kt {
+        z-index: 1;
+        position: absolute;
+        border: none;
+        background-image: url("head.png");
+        background-size: cover;
+        width: 700px;
+        height: 300px;
+        /*        background-color: blue;
+*/
+        position: absolute;
+        top: 70%;
+        left: 25%;
+
+    }
+
+    #quote {
+        width: 100%;
+        /*        background-color: blue;
+*/
+        z-index: 1;
+        font-size: 14px;
+        font-family: 'Cutive Mono', monospace;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.3);
+
+
+
+    }
+
+    #bar {
+        background-color: rgba(0, 0, 0, 0.3);
+        width: 100%;
+        height: 40px;
+        /*        background-color: blue;
+*/
+        z-index: 1;
+
+
+    }
+
+    .subtitle {
+        position: absolute;
+        font-family: 'Cutive Mono', monospace;
+        color: white;
+        display: inline-block;
+        width: 50%;
+        height: 100%;
+        font-size: 30px;
+
+
+
+    }
+
+    #know-title {
+        left: 0%;
+
+    }
+
+    #feel-title {
+        left: 50%;
+
+
+    }
+    </style>
+</head>
+
+<body>
+    <div id="quote">
+        <center>“asdfasdfjasdlfjasdk” — Sheev Palpatine, <i>I am the Senate</i>
+            <br>
+            Oh hai mark</i> </center>
+    </div>
+    <div id="bar">
+        <div class="subtitle" id="know-title">
+            <center>Defense</center>
+        </div>
+        <div class="subtitle" id="feel-title">
+            <center>Baserunners</center>
+        </div>
+    </div>
+    <div class="container" id="know">
+        <div class="containerText" id="knowText"></div>
+    </div>
+    <div class="container" id="feel">
+        <div class="containerText" id="feelText"></div>
+    </div>
+    <div id="meal">
+        <div class="meal" id="plate"></div>
+        <div class="meal" id="kt"></div>
+    </div>
+    <script type="text/javascript">
+    var know = document.getElementById("know");
+    var knowText = document.getElementById("knowText");
+    var feel = document.getElementById("feel");
+    var feelText = document.getElementById("feelText");
+    var plate = document.getElementById("plate");
+
+    var animals = ["lambchop", "bacon", "chicken", "beef", "octopus", "tuna", "turkey", "eggs", "milk", "snails", "scallops"];
+
+    function meat() {
+        var q = Math.round(Math.random() * 1);
+        console.log(q);
+        plate.style.backgroundImage = "url(https://library.kissclipart.com/20180904/ape/kissclipart-softball-ball-clipart-softball-tee-ball-baseball-a51afae7b7627559.jpg)";
+        know.style.backgroundImage = "url(" + animals[q] + ".png)";
+        feel.style.backgroundImage = "url(" + animals[q] + ".png)";
+
+        if (q == 0) {
+            know.style.backgroundImage = "url(https://download.ams.birds.cornell.edu/api/v1/asset/170738461/1800)";
+            knowText.innerHTML = "sejkdsjfsdkfksjdlfkjsdf";
+            feel.style.backgroundImage = "url(sheep1.png)";
+            feelText.innerHTML = "go yankees";
+
+        }
+
+        if (q == 1) {
+            know.style.backgroundImage = "url(testingbase1.png)";
+            knowText.innerHTML = "ahhhhhhhhhhhh";
+            feel.style.backgroundImage = "url(pig1a.png)";
+            feelText.innerHTML = "Hihihihihihihihi" +
+                "<br>" + "<br>" +
+                "";
+        }
+
+
+    };
+
+
+
+    plate.addEventListener("click", meat);
+    </script>
+</body>
+
+</html>
