@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Umbra Explained</title>
+</head>
+<body>
+	<style type="text/css">
+		body{
+    		background-color:#D692F0;
+    		text-align:center;
+    	}
+    	#div1 {
+background-image: url("umbra1.png");
+height:310px;
+width:600px;
+background-size:cover;
+    	}
+    	#div2 {
+background-image: url("umbra2.png");
+height:200px;
+width:400px;
+background-size:cover;
+    	}
+    	#div3 {
+background-image: url("umbra3.png");
+height:100px;
+width:600px;
+background-size:cover;
+    	}
+	</style>
+<h1>Umbra Explained</h1>
+<p>The main structure of Umbra relies on a group of variables (one for each path/storyline) that are set to "false" or "true".</p>
+<center><div id="div2"></div>
+	<p>All variables are set to false at the beginning of the game. When a player finishes a path- in the one pictured below, access to the last scene requires input of a password—they are taken to a new page, which sets the variable for their path to true.</p>
+<div id="div3"></div>
+<p>I used an if statement requiring all variables to be true to get through the door to the final storyline.</p>
+<div id="div1"></div></center>
+<p>You can do a ton of other things with variables and gates in Twine. For example: you can randomize which passage a link takes the reader by modifying your brackets. "The time machine launches into the [[glowing vortex|either("12000 BC","The Future","2AM Yesterday")]]."" Something else you can do with passages and links: change the content of a passage based on how many times a player has visited it. There's a ton of interesting stuff online about other built in functions of Twine.</p>
+<p><b>To be continued: I might post answers to Umbra here sometime in the future. </b></p>
+</body>
+</html>
