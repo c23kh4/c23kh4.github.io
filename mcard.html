@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+
+	<style>
+
+		.things{
+		width:50px;
+		height:50px;
+		position:absolute;
+		background-position:center;
+	
+		background-size:contain;
+		background-repeat: no-repeat;
+		border-radius:50%;
+		transition:2.5s;
+	}
+		#head {
+			font-size:50px;
+			text-align:center;
+			color:pink;
+			margin:50px;
+		}
+		#head:hover {
+			font-size:70px;
+		}
+		#flowers {
+			height: 370px;
+			width:  500px;
+			background-image:url("https://i.insider.com/5cc724d8c013352e2208d4fc?width=1100&format=jpeg&auto=webp");
+			background-size:contain;
+
+		}
+		#signed {
+			font-size:30px;
+			color:purple;
+
+
+		}
+		
+		body {
+			background-color: #f54542;
+			font-family: 'Dancing Script', cursive;
+		}
+
+
+	</style>
+	<title></title>
+</head>
+<body>
+	<div id="head">Happy Mother's Day!</div>
+	<center><div id="flowers"></div><center>
+
+	<center> <audio controls>
+  <source src="Chopin.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio> </center>
+	
+<div id="signed">love, Katie</div>
+
+
+<script type="text/javascript">
+
+function makeSomething() {
+	var jinsoul = document.createElement("div");
+ 			document.body.appendChild(jinsoul);
+ 			jinsoul.classList.add("things");
+ 			jinsoul.style.backgroundImage ="url(cherry.png)";
+ 			jinsoul.style.top =0;
+
+ 		
+ 				function move () {
+ 					jinsoul.style.left = Math.round(Math.random()*1400)+"px";
+ 				jinsoul.style.top = 95+"%";
+ 				 makeSomething();
+ 			
+ 				
+ 				}
+
+ 				  jinsoul.addEventListener("click",
+            function() {
+               move();
+            });
+
+	
+ 		}; 
+ 		makeSomething();
+ 		var i;
+
+ 		for(var i=0; i<10; i++){
+ 			makeSomething();
+ 		};
+ 
+
+ 		
+ 		
+
+
+
+</script>
+</body>
+</html>
