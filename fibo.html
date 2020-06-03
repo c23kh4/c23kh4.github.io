@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		var a = 0;
+		var b = 1;
+		var c = 1;
+
+var array = [];
+var second = [];
+
+array.push(a);
+array.push(b);
+array.push(c);
+
+function fibo(x)  {
+a = c + b;
+b = a + c;
+c = a + b;
+array.push(a);
+array.push(b);
+array.push(c);
+
+}
+
+
+
+ for(var i=0; i<11; i++){
+fibo(); 
+
+}
+array.forEach(function(element){
+if (element%2 == 0) {
+	second.push(element);
+}
+})
+
+
+
+
+	console.log(second);
+	const reducer = (accumulator, currentValue) => accumulator + currentValue;
+
+	console.log(second.reduce(reducer));
+
+	</script>
+
+</body>
+</html>
